@@ -1,0 +1,14 @@
+nyc_taxi_lakehouse:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: MQVEMUM-ZFC18656           # e.g. xy12345.us-east-1
+      user: STARKWARLOCK
+      password: Xpoken24404134!
+      role: ACCOUNTADMIN                     # e.g. SYSADMIN
+      database: NYC_TAXI             # e.g. TAXI_ANALYTICS
+      warehouse: COMPUTE_WH           # e.g. TRANSFORMING
+      schema: ANALYTICS                 # e.g. DBT_USER
+      threads: 1
+      client_session_keep_alive: False

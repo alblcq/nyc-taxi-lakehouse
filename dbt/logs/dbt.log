@@ -1,0 +1,328 @@
+[0m16:14:12.614459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA869986E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA883E7D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA883E79D0>]}
+
+
+============================== 16:14:12.618344 | 9bfbd4e7-afd0-4bf2-bce3-2374c4437e91 ==============================
+[0m16:14:12.618344 [info ] [MainThread]: Running with dbt=1.7.9
+[0m16:14:12.618974 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\alblc\\OneDrive\\Desktop\\nyc-taxi-lakehouse\\dbt\\logs', 'profiles_dir': 'C:\\Users\\alblc\\OneDrive\\Desktop\\nyc-taxi-lakehouse\\dbt', 'static_parser': 'True', 'write_json': 'True'}
+[0m16:14:16.380826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9bfbd4e7-afd0-4bf2-bce3-2374c4437e91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAA26CFCE0>]}
+[0m16:14:16.430793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9bfbd4e7-afd0-4bf2-bce3-2374c4437e91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAA277CD10>]}
+[0m16:14:16.432043 [info ] [MainThread]: Registered adapter: snowflake=1.7.2
+[0m16:14:16.462494 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m16:14:16.464185 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:14:16.464856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9bfbd4e7-afd0-4bf2-bce3-2374c4437e91', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAA2770450>]}
+[0m16:14:19.185013 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.nyc_taxi_lakehouse.stg_taxi_data' (models\staging\stg_taxi_data.sql) depends on a source named 'raw.taxi_data' which was not found
+[0m16:14:19.185924 [debug] [MainThread]: Command `dbt run` failed at 16:14:19.185804 after 6.74 seconds
+[0m16:14:19.186212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAA2A58F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAA2A58B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA8827FE70>]}
+[0m16:14:19.186462 [debug] [MainThread]: Flushing usage events
+[0m16:17:17.039879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228DB2086E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228DCC57D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228DCC579D0>]}
+
+
+============================== 16:17:17.044324 | 0637b28f-b25a-41ec-9405-d544bbf12fc1 ==============================
+[0m16:17:17.044324 [info ] [MainThread]: Running with dbt=1.7.9
+[0m16:17:17.044809 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\alblc\\OneDrive\\Desktop\\nyc-taxi-lakehouse\\dbt', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt run', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\alblc\\OneDrive\\Desktop\\nyc-taxi-lakehouse\\dbt\\logs', 'write_json': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])'}
+[0m16:17:17.736990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0637b28f-b25a-41ec-9405-d544bbf12fc1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228F6F3FCE0>]}
+[0m16:17:17.787388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0637b28f-b25a-41ec-9405-d544bbf12fc1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228F6FE8D10>]}
+[0m16:17:17.788440 [info ] [MainThread]: Registered adapter: snowflake=1.7.2
+[0m16:17:17.793361 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m16:17:17.794021 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:17:17.794700 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0637b28f-b25a-41ec-9405-d544bbf12fc1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228F6FE4450>]}
+[0m16:17:18.347865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0637b28f-b25a-41ec-9405-d544bbf12fc1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228F714B5C0>]}
+[0m16:17:18.372115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0637b28f-b25a-41ec-9405-d544bbf12fc1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228F73BBBD0>]}
+[0m16:17:18.372489 [info ] [MainThread]: Found 2 models, 1 source, 0 exposures, 0 metrics, 430 macros, 0 groups, 0 semantic models
+[0m16:17:18.372974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0637b28f-b25a-41ec-9405-d544bbf12fc1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228F7307AD0>]}
+[0m16:17:18.374134 [info ] [MainThread]: 
+[0m16:17:18.374891 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:17:18.376691 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_NYC_TAXI'
+[0m16:17:18.385408 [debug] [ThreadPool]: Using snowflake connection "list_NYC_TAXI"
+[0m16:17:18.386022 [debug] [ThreadPool]: On list_NYC_TAXI: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "nyc_taxi_lakehouse", "target_name": "dev", "connection_name": "list_NYC_TAXI"} */
+show terse schemas in database NYC_TAXI
+    limit 10000
+[0m16:17:18.386930 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:17:23.515965 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 5.0 seconds
+[0m16:17:23.518078 [debug] [ThreadPool]: On list_NYC_TAXI: Close
+[0m16:17:23.733758 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_NYC_TAXI_ANALYTICS'
+[0m16:17:23.739403 [debug] [ThreadPool]: Using snowflake connection "list_NYC_TAXI_ANALYTICS"
+[0m16:17:23.739765 [debug] [ThreadPool]: On list_NYC_TAXI_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "nyc_taxi_lakehouse", "target_name": "dev", "connection_name": "list_NYC_TAXI_ANALYTICS"} */
+show terse objects in NYC_TAXI.ANALYTICS limit 10000
+[0m16:17:23.740017 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:17:26.844376 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 3.0 seconds
+[0m16:17:26.845563 [debug] [ThreadPool]: On list_NYC_TAXI_ANALYTICS: Close
+[0m16:17:27.051270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0637b28f-b25a-41ec-9405-d544bbf12fc1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228F746E690>]}
+[0m16:17:27.052078 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:17:27.052807 [info ] [MainThread]: 
+[0m16:17:27.060398 [debug] [Thread-1 (]: Began running node model.nyc_taxi_lakehouse.stg_taxi_data
+[0m16:17:27.061372 [info ] [Thread-1 (]: 1 of 2 START sql table model ANALYTICS.stg_taxi_data ........................... [RUN]
+[0m16:17:27.062636 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.nyc_taxi_lakehouse.stg_taxi_data'
+[0m16:17:27.062942 [debug] [Thread-1 (]: Began compiling node model.nyc_taxi_lakehouse.stg_taxi_data
+[0m16:17:27.072221 [debug] [Thread-1 (]: Writing injected SQL for node "model.nyc_taxi_lakehouse.stg_taxi_data"
+[0m16:17:27.074315 [debug] [Thread-1 (]: Timing info for model.nyc_taxi_lakehouse.stg_taxi_data (compile): 16:17:27.063106 => 16:17:27.074066
+[0m16:17:27.074626 [debug] [Thread-1 (]: Began executing node model.nyc_taxi_lakehouse.stg_taxi_data
+[0m16:17:27.093412 [debug] [Thread-1 (]: Writing runtime sql for node "model.nyc_taxi_lakehouse.stg_taxi_data"
+[0m16:17:27.096099 [debug] [Thread-1 (]: Using snowflake connection "model.nyc_taxi_lakehouse.stg_taxi_data"
+[0m16:17:27.096513 [debug] [Thread-1 (]: On model.nyc_taxi_lakehouse.stg_taxi_data: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "nyc_taxi_lakehouse", "target_name": "dev", "node_id": "model.nyc_taxi_lakehouse.stg_taxi_data"} */
+create or replace transient table NYC_TAXI.ANALYTICS.stg_taxi_data
+         as
+        (-- models/stg_taxi_data.sql
+select
+    vendorid,
+    tpep_pickup_datetime,
+    tpep_dropoff_datetime,
+    passenger_count,
+    trip_distance,
+    fare_amount
+from NYC_TAXI.ANALYTICS.YELLOW_TRIPDATA_CLEANED
+where pickup_datetime >= '2025-01-01'
+        );
+[0m16:17:27.096798 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:17:29.794725 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bf4001-0000-347d-0000-0066ae0bf371
+[0m16:17:29.795051 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 12 at position 6
+invalid identifier 'PICKUP_DATETIME'
+[0m16:17:29.795393 [debug] [Thread-1 (]: Timing info for model.nyc_taxi_lakehouse.stg_taxi_data (execute): 16:17:27.074777 => 16:17:29.795256
+[0m16:17:29.795625 [debug] [Thread-1 (]: On model.nyc_taxi_lakehouse.stg_taxi_data: Close
+[0m16:17:30.126619 [debug] [Thread-1 (]: Database Error in model stg_taxi_data (models\staging\stg_taxi_data.sql)
+  000904 (42000): SQL compilation error: error line 12 at position 6
+  invalid identifier 'PICKUP_DATETIME'
+  compiled Code at target\run\nyc_taxi_lakehouse\models\staging\stg_taxi_data.sql
+[0m16:17:30.127089 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0637b28f-b25a-41ec-9405-d544bbf12fc1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228F806E0A0>]}
+[0m16:17:30.127813 [error] [Thread-1 (]: 1 of 2 ERROR creating sql table model ANALYTICS.stg_taxi_data .................. [[31mERROR[0m in 3.07s]
+[0m16:17:30.128651 [debug] [Thread-1 (]: Finished running node model.nyc_taxi_lakehouse.stg_taxi_data
+[0m16:17:30.129720 [debug] [Thread-1 (]: Began running node model.nyc_taxi_lakehouse.fct_trip_metrics
+[0m16:17:30.130024 [info ] [Thread-1 (]: 2 of 2 SKIP relation ANALYTICS.fct_trip_metrics ................................ [[33mSKIP[0m]
+[0m16:17:30.130676 [debug] [Thread-1 (]: Finished running node model.nyc_taxi_lakehouse.fct_trip_metrics
+[0m16:17:30.132036 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:17:30.132249 [debug] [MainThread]: Connection 'list_NYC_TAXI' was properly closed.
+[0m16:17:30.132424 [debug] [MainThread]: Connection 'list_NYC_TAXI_ANALYTICS' was properly closed.
+[0m16:17:30.132584 [debug] [MainThread]: Connection 'model.nyc_taxi_lakehouse.stg_taxi_data' was properly closed.
+[0m16:17:30.132774 [info ] [MainThread]: 
+[0m16:17:30.133223 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 11.76 seconds (11.76s).
+[0m16:17:30.133995 [debug] [MainThread]: Command end result
+[0m16:17:30.145332 [info ] [MainThread]: 
+[0m16:17:30.146465 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m16:17:30.147833 [info ] [MainThread]: 
+[0m16:17:30.148862 [error] [MainThread]:   Database Error in model stg_taxi_data (models\staging\stg_taxi_data.sql)
+  000904 (42000): SQL compilation error: error line 12 at position 6
+  invalid identifier 'PICKUP_DATETIME'
+  compiled Code at target\run\nyc_taxi_lakehouse\models\staging\stg_taxi_data.sql
+[0m16:17:30.149887 [info ] [MainThread]: 
+[0m16:17:30.150689 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m16:17:30.152443 [debug] [MainThread]: Command `dbt run` failed at 16:17:30.152112 after 13.32 seconds
+[0m16:17:30.153248 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228F756F6B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228F8083410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228F755DCD0>]}
+[0m16:17:30.153625 [debug] [MainThread]: Flushing usage events
+[0m16:23:02.712567 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269A9BC86E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269AB627D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269AB6279D0>]}
+
+
+============================== 16:23:02.716299 | 01f9a785-ff2b-446d-bf68-f4ffdb140a0d ==============================
+[0m16:23:02.716299 [info ] [MainThread]: Running with dbt=1.7.9
+[0m16:23:02.717040 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\alblc\\OneDrive\\Desktop\\nyc-taxi-lakehouse\\dbt', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt run', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\alblc\\OneDrive\\Desktop\\nyc-taxi-lakehouse\\dbt\\logs', 'write_json': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])'}
+[0m16:23:03.422206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '01f9a785-ff2b-446d-bf68-f4ffdb140a0d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269C590FCE0>]}
+[0m16:23:03.473163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '01f9a785-ff2b-446d-bf68-f4ffdb140a0d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269C59B8D10>]}
+[0m16:23:03.474410 [info ] [MainThread]: Registered adapter: snowflake=1.7.2
+[0m16:23:03.479761 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m16:23:03.548886 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:23:03.549354 [debug] [MainThread]: Partial parsing: updated file: nyc_taxi_lakehouse://models\staging\stg_taxi_data.sql
+[0m16:23:03.628503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '01f9a785-ff2b-446d-bf68-f4ffdb140a0d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269C59B6550>]}
+[0m16:23:03.633982 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '01f9a785-ff2b-446d-bf68-f4ffdb140a0d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269C5B1BC50>]}
+[0m16:23:03.634348 [info ] [MainThread]: Found 2 models, 1 source, 0 exposures, 0 metrics, 430 macros, 0 groups, 0 semantic models
+[0m16:23:03.634850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '01f9a785-ff2b-446d-bf68-f4ffdb140a0d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269C5DDA270>]}
+[0m16:23:03.635992 [info ] [MainThread]: 
+[0m16:23:03.636747 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:23:03.637814 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_NYC_TAXI'
+[0m16:23:03.645197 [debug] [ThreadPool]: Using snowflake connection "list_NYC_TAXI"
+[0m16:23:03.645537 [debug] [ThreadPool]: On list_NYC_TAXI: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "nyc_taxi_lakehouse", "target_name": "dev", "connection_name": "list_NYC_TAXI"} */
+show terse schemas in database NYC_TAXI
+    limit 10000
+[0m16:23:03.645773 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:23:07.818885 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 4.0 seconds
+[0m16:23:07.820794 [debug] [ThreadPool]: On list_NYC_TAXI: Close
+[0m16:23:08.035969 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_NYC_TAXI_ANALYTICS'
+[0m16:23:08.042096 [debug] [ThreadPool]: Using snowflake connection "list_NYC_TAXI_ANALYTICS"
+[0m16:23:08.042474 [debug] [ThreadPool]: On list_NYC_TAXI_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "nyc_taxi_lakehouse", "target_name": "dev", "connection_name": "list_NYC_TAXI_ANALYTICS"} */
+show terse objects in NYC_TAXI.ANALYTICS limit 10000
+[0m16:23:08.043189 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:23:11.223735 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 3.0 seconds
+[0m16:23:11.225123 [debug] [ThreadPool]: On list_NYC_TAXI_ANALYTICS: Close
+[0m16:23:11.429006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '01f9a785-ff2b-446d-bf68-f4ffdb140a0d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269C6765A50>]}
+[0m16:23:11.429520 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:23:11.430056 [info ] [MainThread]: 
+[0m16:23:11.433334 [debug] [Thread-1 (]: Began running node model.nyc_taxi_lakehouse.stg_taxi_data
+[0m16:23:11.433675 [info ] [Thread-1 (]: 1 of 2 START sql table model ANALYTICS.stg_taxi_data ........................... [RUN]
+[0m16:23:11.434410 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.nyc_taxi_lakehouse.stg_taxi_data'
+[0m16:23:11.434657 [debug] [Thread-1 (]: Began compiling node model.nyc_taxi_lakehouse.stg_taxi_data
+[0m16:23:11.439163 [debug] [Thread-1 (]: Writing injected SQL for node "model.nyc_taxi_lakehouse.stg_taxi_data"
+[0m16:23:11.440612 [debug] [Thread-1 (]: Timing info for model.nyc_taxi_lakehouse.stg_taxi_data (compile): 16:23:11.434794 => 16:23:11.440082
+[0m16:23:11.440998 [debug] [Thread-1 (]: Began executing node model.nyc_taxi_lakehouse.stg_taxi_data
+[0m16:23:11.462646 [debug] [Thread-1 (]: Writing runtime sql for node "model.nyc_taxi_lakehouse.stg_taxi_data"
+[0m16:23:11.463881 [debug] [Thread-1 (]: Using snowflake connection "model.nyc_taxi_lakehouse.stg_taxi_data"
+[0m16:23:11.464322 [debug] [Thread-1 (]: On model.nyc_taxi_lakehouse.stg_taxi_data: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "nyc_taxi_lakehouse", "target_name": "dev", "node_id": "model.nyc_taxi_lakehouse.stg_taxi_data"} */
+create or replace transient table NYC_TAXI.ANALYTICS.stg_taxi_data
+         as
+        (-- models/stg_taxi_data.sql
+select
+    vendorid,
+    tpep_pickup_datetime,
+    tpep_dropoff_datetime,
+    passenger_count,
+    trip_distance,
+    fare_amount
+from NYC_TAXI.ANALYTICS.YELLOW_TRIPDATA_CLEANED
+where tpep_pickup_datetime >= '2025-01-01'
+        );
+[0m16:23:11.464624 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:23:15.524288 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 4.0 seconds
+[0m16:23:15.538104 [debug] [Thread-1 (]: Timing info for model.nyc_taxi_lakehouse.stg_taxi_data (execute): 16:23:11.441249 => 16:23:15.537954
+[0m16:23:15.538382 [debug] [Thread-1 (]: On model.nyc_taxi_lakehouse.stg_taxi_data: Close
+[0m16:23:15.729783 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01f9a785-ff2b-446d-bf68-f4ffdb140a0d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269C617FC50>]}
+[0m16:23:15.730268 [info ] [Thread-1 (]: 1 of 2 OK created sql table model ANALYTICS.stg_taxi_data ...................... [[32mSUCCESS 1[0m in 4.30s]
+[0m16:23:15.731078 [debug] [Thread-1 (]: Finished running node model.nyc_taxi_lakehouse.stg_taxi_data
+[0m16:23:15.732052 [debug] [Thread-1 (]: Began running node model.nyc_taxi_lakehouse.fct_trip_metrics
+[0m16:23:15.732437 [info ] [Thread-1 (]: 2 of 2 START sql table model ANALYTICS.fct_trip_metrics ........................ [RUN]
+[0m16:23:15.733444 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nyc_taxi_lakehouse.stg_taxi_data, now model.nyc_taxi_lakehouse.fct_trip_metrics)
+[0m16:23:15.733812 [debug] [Thread-1 (]: Began compiling node model.nyc_taxi_lakehouse.fct_trip_metrics
+[0m16:23:15.736125 [debug] [Thread-1 (]: Writing injected SQL for node "model.nyc_taxi_lakehouse.fct_trip_metrics"
+[0m16:23:15.737706 [debug] [Thread-1 (]: Timing info for model.nyc_taxi_lakehouse.fct_trip_metrics (compile): 16:23:15.734021 => 16:23:15.737450
+[0m16:23:15.738045 [debug] [Thread-1 (]: Began executing node model.nyc_taxi_lakehouse.fct_trip_metrics
+[0m16:23:15.740302 [debug] [Thread-1 (]: Writing runtime sql for node "model.nyc_taxi_lakehouse.fct_trip_metrics"
+[0m16:23:15.741999 [debug] [Thread-1 (]: Using snowflake connection "model.nyc_taxi_lakehouse.fct_trip_metrics"
+[0m16:23:15.742354 [debug] [Thread-1 (]: On model.nyc_taxi_lakehouse.fct_trip_metrics: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "nyc_taxi_lakehouse", "target_name": "dev", "node_id": "model.nyc_taxi_lakehouse.fct_trip_metrics"} */
+create or replace transient table NYC_TAXI.ANALYTICS.fct_trip_metrics
+         as
+        (-- models/fct_trip_metrics.sql
+select
+    date(tpep_pickup_datetime) as trip_date,
+    count(*) as total_trips,
+    avg(trip_distance) as avg_distance,
+    sum(fare_amount) as total_revenue
+from NYC_TAXI.ANALYTICS.stg_taxi_data
+group by 1
+        );
+[0m16:23:15.742777 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:23:19.312710 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 4.0 seconds
+[0m16:23:19.315275 [debug] [Thread-1 (]: Timing info for model.nyc_taxi_lakehouse.fct_trip_metrics (execute): 16:23:15.738237 => 16:23:19.315023
+[0m16:23:19.315770 [debug] [Thread-1 (]: On model.nyc_taxi_lakehouse.fct_trip_metrics: Close
+[0m16:23:19.517922 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01f9a785-ff2b-446d-bf68-f4ffdb140a0d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269C69EDA70>]}
+[0m16:23:19.518403 [info ] [Thread-1 (]: 2 of 2 OK created sql table model ANALYTICS.fct_trip_metrics ................... [[32mSUCCESS 1[0m in 3.78s]
+[0m16:23:19.519051 [debug] [Thread-1 (]: Finished running node model.nyc_taxi_lakehouse.fct_trip_metrics
+[0m16:23:19.520688 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:23:19.521108 [debug] [MainThread]: Connection 'list_NYC_TAXI' was properly closed.
+[0m16:23:19.521606 [debug] [MainThread]: Connection 'list_NYC_TAXI_ANALYTICS' was properly closed.
+[0m16:23:19.522356 [debug] [MainThread]: Connection 'model.nyc_taxi_lakehouse.fct_trip_metrics' was properly closed.
+[0m16:23:19.523116 [info ] [MainThread]: 
+[0m16:23:19.524074 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 15.89 seconds (15.89s).
+[0m16:23:19.525246 [debug] [MainThread]: Command end result
+[0m16:23:19.531851 [info ] [MainThread]: 
+[0m16:23:19.532541 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:23:19.533007 [info ] [MainThread]: 
+[0m16:23:19.533539 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m16:23:19.534417 [debug] [MainThread]: Command `dbt run` succeeded at 16:23:19.534304 after 16.96 seconds
+[0m16:23:19.534679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269C5FDC7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269C692EDE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269C5BED250>]}
+[0m16:23:19.534919 [debug] [MainThread]: Flushing usage events
+[0m16:29:35.680142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8989386E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F89A397D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F89A3979D0>]}
+
+
+============================== 16:29:35.683721 | bdd9a70a-7877-44bb-9638-03cc5d72db2a ==============================
+[0m16:29:35.683721 [info ] [MainThread]: Running with dbt=1.7.9
+[0m16:29:35.684212 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'log_path': 'C:\\Users\\alblc\\OneDrive\\Desktop\\nyc-taxi-lakehouse\\dbt\\logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\alblc\\OneDrive\\Desktop\\nyc-taxi-lakehouse\\dbt', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'write_json': 'True'}
+[0m16:29:36.415597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bdd9a70a-7877-44bb-9638-03cc5d72db2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B46BFCE0>]}
+[0m16:29:36.466978 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bdd9a70a-7877-44bb-9638-03cc5d72db2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B4768D10>]}
+[0m16:29:36.468104 [info ] [MainThread]: Registered adapter: snowflake=1.7.2
+[0m16:29:36.473247 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m16:29:36.543373 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:29:36.543775 [debug] [MainThread]: Partial parsing: updated file: nyc_taxi_lakehouse://models\staging\stg_taxi_data.sql
+[0m16:29:36.621617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bdd9a70a-7877-44bb-9638-03cc5d72db2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B4762550>]}
+[0m16:29:36.627835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bdd9a70a-7877-44bb-9638-03cc5d72db2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B48CBC50>]}
+[0m16:29:36.628216 [info ] [MainThread]: Found 2 models, 1 source, 0 exposures, 0 metrics, 430 macros, 0 groups, 0 semantic models
+[0m16:29:36.628771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bdd9a70a-7877-44bb-9638-03cc5d72db2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B4B8A270>]}
+[0m16:29:36.629925 [info ] [MainThread]: 
+[0m16:29:36.630695 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:29:36.631848 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_NYC_TAXI'
+[0m16:29:36.641805 [debug] [ThreadPool]: Using snowflake connection "list_NYC_TAXI"
+[0m16:29:36.642135 [debug] [ThreadPool]: On list_NYC_TAXI: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "nyc_taxi_lakehouse", "target_name": "dev", "connection_name": "list_NYC_TAXI"} */
+show terse schemas in database NYC_TAXI
+    limit 10000
+[0m16:29:36.642343 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:29:40.352116 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 4.0 seconds
+[0m16:29:40.353893 [debug] [ThreadPool]: On list_NYC_TAXI: Close
+[0m16:29:40.557470 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_NYC_TAXI_ANALYTICS'
+[0m16:29:40.567069 [debug] [ThreadPool]: Using snowflake connection "list_NYC_TAXI_ANALYTICS"
+[0m16:29:40.567672 [debug] [ThreadPool]: On list_NYC_TAXI_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "nyc_taxi_lakehouse", "target_name": "dev", "connection_name": "list_NYC_TAXI_ANALYTICS"} */
+show terse objects in NYC_TAXI.ANALYTICS limit 10000
+[0m16:29:40.567903 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:29:43.628057 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 3.0 seconds
+[0m16:29:43.629166 [debug] [ThreadPool]: On list_NYC_TAXI_ANALYTICS: Close
+[0m16:29:43.834674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bdd9a70a-7877-44bb-9638-03cc5d72db2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B46CF790>]}
+[0m16:29:43.835231 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:29:43.835728 [info ] [MainThread]: 
+[0m16:29:43.838322 [debug] [Thread-1 (]: Began running node model.nyc_taxi_lakehouse.stg_taxi_data
+[0m16:29:43.839237 [info ] [Thread-1 (]: 1 of 2 START sql table model ANALYTICS.stg_taxi_data ........................... [RUN]
+[0m16:29:43.839990 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.nyc_taxi_lakehouse.stg_taxi_data'
+[0m16:29:43.840245 [debug] [Thread-1 (]: Began compiling node model.nyc_taxi_lakehouse.stg_taxi_data
+[0m16:29:43.845384 [debug] [Thread-1 (]: Writing injected SQL for node "model.nyc_taxi_lakehouse.stg_taxi_data"
+[0m16:29:43.846416 [debug] [Thread-1 (]: Timing info for model.nyc_taxi_lakehouse.stg_taxi_data (compile): 16:29:43.840386 => 16:29:43.846047
+[0m16:29:43.846712 [debug] [Thread-1 (]: Began executing node model.nyc_taxi_lakehouse.stg_taxi_data
+[0m16:29:43.866098 [debug] [Thread-1 (]: Writing runtime sql for node "model.nyc_taxi_lakehouse.stg_taxi_data"
+[0m16:29:43.867132 [debug] [Thread-1 (]: Using snowflake connection "model.nyc_taxi_lakehouse.stg_taxi_data"
+[0m16:29:43.867432 [debug] [Thread-1 (]: On model.nyc_taxi_lakehouse.stg_taxi_data: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "nyc_taxi_lakehouse", "target_name": "dev", "node_id": "model.nyc_taxi_lakehouse.stg_taxi_data"} */
+create or replace transient table NYC_TAXI.ANALYTICS.stg_taxi_data
+         as
+        (-- models/stg_taxi_data.sql
+select
+    vendorid,
+    tpep_pickup_datetime,
+    tpep_dropoff_datetime,
+    passenger_count,
+    trip_distance,
+    fare_amount
+from NYC_TAXI.ANALYTICS.YELLOW_TRIPDATA_CLEANED
+where tpep_pickup_datetime <= '2025-01-01'
+        );
+[0m16:29:43.867671 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:29:48.222141 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 4.0 seconds
+[0m16:29:48.239511 [debug] [Thread-1 (]: Timing info for model.nyc_taxi_lakehouse.stg_taxi_data (execute): 16:29:43.846866 => 16:29:48.239359
+[0m16:29:48.239791 [debug] [Thread-1 (]: On model.nyc_taxi_lakehouse.stg_taxi_data: Close
+[0m16:29:48.353973 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bdd9a70a-7877-44bb-9638-03cc5d72db2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B4F2FDD0>]}
+[0m16:29:48.354497 [info ] [Thread-1 (]: 1 of 2 OK created sql table model ANALYTICS.stg_taxi_data ...................... [[32mSUCCESS 1[0m in 4.51s]
+[0m16:29:48.355328 [debug] [Thread-1 (]: Finished running node model.nyc_taxi_lakehouse.stg_taxi_data
+[0m16:29:48.356001 [debug] [Thread-1 (]: Began running node model.nyc_taxi_lakehouse.fct_trip_metrics
+[0m16:29:48.356314 [info ] [Thread-1 (]: 2 of 2 START sql table model ANALYTICS.fct_trip_metrics ........................ [RUN]
+[0m16:29:48.356938 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nyc_taxi_lakehouse.stg_taxi_data, now model.nyc_taxi_lakehouse.fct_trip_metrics)
+[0m16:29:48.357165 [debug] [Thread-1 (]: Began compiling node model.nyc_taxi_lakehouse.fct_trip_metrics
+[0m16:29:48.359052 [debug] [Thread-1 (]: Writing injected SQL for node "model.nyc_taxi_lakehouse.fct_trip_metrics"
+[0m16:29:48.360473 [debug] [Thread-1 (]: Timing info for model.nyc_taxi_lakehouse.fct_trip_metrics (compile): 16:29:48.357298 => 16:29:48.360199
+[0m16:29:48.360773 [debug] [Thread-1 (]: Began executing node model.nyc_taxi_lakehouse.fct_trip_metrics
+[0m16:29:48.363097 [debug] [Thread-1 (]: Writing runtime sql for node "model.nyc_taxi_lakehouse.fct_trip_metrics"
+[0m16:29:48.364204 [debug] [Thread-1 (]: Using snowflake connection "model.nyc_taxi_lakehouse.fct_trip_metrics"
+[0m16:29:48.365206 [debug] [Thread-1 (]: On model.nyc_taxi_lakehouse.fct_trip_metrics: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "nyc_taxi_lakehouse", "target_name": "dev", "node_id": "model.nyc_taxi_lakehouse.fct_trip_metrics"} */
+create or replace transient table NYC_TAXI.ANALYTICS.fct_trip_metrics
+         as
+        (-- models/fct_trip_metrics.sql
+select
+    date(tpep_pickup_datetime) as trip_date,
+    count(*) as total_trips,
+    avg(trip_distance) as avg_distance,
+    sum(fare_amount) as total_revenue
+from NYC_TAXI.ANALYTICS.stg_taxi_data
+group by 1
+        );
+[0m16:29:48.366689 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:29:52.025488 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 4.0 seconds
+[0m16:29:52.027318 [debug] [Thread-1 (]: Timing info for model.nyc_taxi_lakehouse.fct_trip_metrics (execute): 16:29:48.360931 => 16:29:52.027171
+[0m16:29:52.027669 [debug] [Thread-1 (]: On model.nyc_taxi_lakehouse.fct_trip_metrics: Close
+[0m16:29:52.230574 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bdd9a70a-7877-44bb-9638-03cc5d72db2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B5799A70>]}
+[0m16:29:52.231147 [info ] [Thread-1 (]: 2 of 2 OK created sql table model ANALYTICS.fct_trip_metrics ................... [[32mSUCCESS 1[0m in 3.87s]
+[0m16:29:52.231959 [debug] [Thread-1 (]: Finished running node model.nyc_taxi_lakehouse.fct_trip_metrics
+[0m16:29:52.233558 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:29:52.233777 [debug] [MainThread]: Connection 'list_NYC_TAXI' was properly closed.
+[0m16:29:52.233955 [debug] [MainThread]: Connection 'list_NYC_TAXI_ANALYTICS' was properly closed.
+[0m16:29:52.234112 [debug] [MainThread]: Connection 'model.nyc_taxi_lakehouse.fct_trip_metrics' was properly closed.
+[0m16:29:52.234303 [info ] [MainThread]: 
+[0m16:29:52.234953 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 15.60 seconds (15.60s).
+[0m16:29:52.235875 [debug] [MainThread]: Command end result
+[0m16:29:52.242832 [info ] [MainThread]: 
+[0m16:29:52.243579 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:29:52.244144 [info ] [MainThread]: 
+[0m16:29:52.244861 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m16:29:52.246010 [debug] [MainThread]: Command `dbt run` succeeded at 16:29:52.245821 after 16.71 seconds
+[0m16:29:52.246312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B5703430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B56E3380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B4A721D0>]}
+[0m16:29:52.246574 [debug] [MainThread]: Flushing usage events

@@ -1,0 +1,1 @@
+{"_invocation_id": "bdd9a70a-7877-44bb-9638-03cc5d72db2a", "linked": {"0": {"name": "source.nyc_taxi_lakehouse.raw.YELLOW_TRIPDATA_CLEANED", "type": "source", "succ": [2]}, "1": {"name": "model.nyc_taxi_lakehouse.fct_trip_metrics", "type": "model"}, "2": {"name": "model.nyc_taxi_lakehouse.stg_taxi_data", "type": "model", "succ": [1]}}}

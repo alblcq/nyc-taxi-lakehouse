@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: raw
+    database: NYC_TAXI
+    schema: ANALYTICS
+    quoting:
+      database: false
+      schema: false
+      identifier: false
+    tables:
+      - name: YELLOW_TRIPDATA_CLEANED
+        columns:
+          - name: vendorid
+            description: "Unique Taxi trip identifier"
+          - name: tpep_pickup_datetime
+            description: "Start of the trip"
+          - name: tpep_dropoff_datetime
+            description: "End of the trip"
