@@ -13,7 +13,7 @@ import os
 from botocore.exceptions import BotoCoreError, NoCredentialsError, ClientError
 import tempfile
 from dotenv import load_dotenv
-from data_clean.config import BUCKET_NAME, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, REGION
+from data_ingest.config import BUCKET_NAME, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, REGION
 
 # Logging config
 logging.basicConfig(
@@ -65,4 +65,4 @@ def main(year, month, bucket):
     logging.info(f"End of pipeline for {filename}")
 
 if __name__ == "__main__":
-    main(year=2024, month=7, bucket=BUCKET_NAME)
+    main(year=2024, month=8, bucket=BUCKET_NAME)
